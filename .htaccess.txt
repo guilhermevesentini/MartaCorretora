@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteBase /
+RewriteRule ^Home/index.html [NC,QSA,L]
+RewriteRule ^Seguro Auto/Auto.html [NC,QSA,L]
+RewriteRule ^Plano de Saúde/PlanosdeSaude.html [NC,QSA,L]
+RewriteRule ^Produtos/Produtos.html [NC,QSA,L]
+RewriteRule ^Contato/Contato.html [NC,QSA,L]
+onde esta site ali você tem que colocar o diretorio onde esta suas paginas html, feito isso e só você mudar seus links do site para os nomes que estão no arquivo
+<a href="C:\Users\guilh\Desktop\MCR Bootstrap">Marta Corretora<a/>
