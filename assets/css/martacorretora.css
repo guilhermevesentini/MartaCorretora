@@ -603,6 +603,11 @@ body {
 .text-produtos {
 	float: left;
 }
+.box-shadow {
+	-webkit-box-shadow: 5px 10px 10px 2px rgba(179,179,179,0.84);
+-moz-box-shadow: 5px 10px 10px 2px rgba(179,179,179,0.84);
+box-shadow: 5px 10px 10px 2px rgba(179,179,179,0.84);
+}
 
 /* Desktop */
 
