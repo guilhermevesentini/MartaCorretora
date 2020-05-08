@@ -701,11 +701,17 @@ body {
 	position: relative;
 	z-index: 1;
 	height: 100vh;
+	margin-top: 0px;
+	margin-bottom: 5rem;
 }
 .formContato {
-	padding: 0px 30px;
-	
-	margin-bottom: 5rem;
+	padding: 20px 30px;
+}
+#Contato h1 {	
+	color: rgb(55, 55, 80);
+	line-height: 1;
+	text-align: left;
+	font-size: calc(30px + (48 - 30) * ((100vw - 320px)/(1600 - 320)))
 }
 
 .formContato input:focus, .formContato textarea:focus {
@@ -723,26 +729,6 @@ body {
 	margin-bottom: 20px;
 }
 
-/*#Contato input[type=submit] {
-	color: #fff;
-	width: 185px;
-	height: 60px;
-	text-shadow: none;
-	font-size: 14px;
-	padding: 0.1em;
-	letter-spacing: 0.05em;
-	margin: 0 0 20px 0;
-	display: block;
-	border: 0;
-	text-transform: none;
-	border-radius: 0;
-	-moz-border-radius: 0;
-	-webkit-border-radius: 0;
-	box-shadow: none;
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
-}
-*/
 .formContato input[type=submit]:hover, .formContato input[type=submit]:active {
 	background: #43413e !important;
 }
@@ -750,67 +736,13 @@ body {
 .formContato textarea {
 	padding-top: 1em;
 }
-
-div.cform-response-output {
-	max-width: 60%;
-	text-align: center;
-	margin-left: 40% !important;
-	margin-top: 0.5em !important;
-	padding: 0.5em !important;
-	border-radius: 4px;
-	-moz-border-radius: 4px;
-	-webkit-border-radius: 4px;
+.boxContato {
+	padding: 10px;
 }
-
-.cform-not-valid-tip {
-	color: #888;
-	border: 1px dotted #ad3729 !important;
-	width: 100% !important;
-	left: 0 !important;
-	padding: 0.5em !important;
-	font-family: 'Open Sans', sans-serif;
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	border-radius: 4px;
-	-moz-border-radius: 4px;
-	-webkit-border-radius: 4px;
-}
-
-.send-btn input {
-	margin: 0 auto 20px auto !important;
-}
-
-.validation {
-	color: red;
-	display: none;
-	margin: 0 0 20px;
-	font-weight: 400;
-	font-size: 13px;
-}
-
-#sendmessage {
-	color: green;
-	border: 1px solid green;
-	display: none;
-	text-align: center;
-	padding: 15px;
-	font-weight: 600;
-	margin-bottom: 15px;
-}
-
-#errormessage {
-	color: red;
-	display: none;
-	border: 1px solid red;
-	text-align: center;
-	padding: 15px;
-	font-weight: 600;
-	margin-bottom: 15px;
-}
-
-#sendmessage.show, #errormessage.show, .show {
-	display: block;
+.boxContato img {
+	width: 200px;
+	margin:0px;
+	float: center;
 }
 
 /*footer*/
