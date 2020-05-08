@@ -697,25 +697,19 @@ body {
   --- Contact ----
 =========================== */
 
-#contact-form {
+#Contato {
 	position: relative;
-	z-index: 999;
+	z-index: 1;
+	height: 100vh;
+}
+.formContato {
+	padding: 0px 30px;
+	
+	margin-bottom: 5rem;
 }
 
-#contact-form input[type=text], .contactForm textarea {
-	width: 100%;
-	background: rgba(227, 231, 228, 1);
-	font-family: 'Open Sans', sans serif;
-	border: 0;
-	font-size: 14px;
-	text-align: left;
-	vertical-align: middle;
-	padding: 0 10px;
-}
-
-#contact-form input[type=text]:focus, .contactForm textarea:focus {
-	background: rgba(101, 106, 100, 1);
-	color: #eff1ef;
+.formContato input:focus, .formContato textarea:focus {
+	background: rgb(252, 252, 248);
 	box-shadow: none;
 	-moz-box-shadow: none;
 	-webkit-box-shadow: none;
@@ -724,18 +718,18 @@ body {
 	-webkit-transition: background 0.25 ease-in;
 }
 
-#contact-form input[type=text] {
-	height: 60px;
-	margin-bottom: 30px;
+.formContato input {
+	height: 35px;
+	margin-bottom: 20px;
 }
 
-#contact-form input[type=submit] {
+/*#Contato input[type=submit] {
 	color: #fff;
 	width: 185px;
 	height: 60px;
 	text-shadow: none;
 	font-size: 14px;
-	padding: 0.5em;
+	padding: 0.1em;
 	letter-spacing: 0.05em;
 	margin: 0 0 20px 0;
 	display: block;
@@ -748,12 +742,12 @@ body {
 	-moz-box-shadow: none;
 	-webkit-box-shadow: none;
 }
-
-#contact-form input[type=submit]:hover, #contact-form input[type=submit]:active {
+*/
+.formContato input[type=submit]:hover, .formContato input[type=submit]:active {
 	background: #43413e !important;
 }
 
-#contact-form textarea {
+.formContato textarea {
 	padding-top: 1em;
 }
 
