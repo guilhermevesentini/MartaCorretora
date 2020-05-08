@@ -700,7 +700,7 @@ body {
 #Contato {
 	position: relative;
 	z-index: 1;
-	height: 100vh;
+	height: auto;
 	margin-top: 0px;
 	margin-bottom: 5rem;
 }
@@ -740,9 +740,19 @@ body {
 	padding: 10px;
 }
 .boxContato img {
-	width: 150px;
+	width: 80px;
 	margin:0px;
 }
+@media screen and (max-width: 766px) {
+	#content-desktop {
+	  visibility: hidden;
+	  clear: both;
+	  float: center;
+	  margin: 10px auto 5px 20px;
+	  width: 28%;
+	  display: none;
+	}
+  }
 
 /*footer*/
 
