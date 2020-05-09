@@ -321,7 +321,7 @@ body {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	margin-bottom: 5rem;
+	margin-bottom: 4rem;
 }
 
 .hero-text {
@@ -348,6 +348,36 @@ body {
 	border: 1px solid #606969;
 	margin: 10px;
 }
+
+/* Services
+-------------------------------------------------- */
+.page-section{
+	height: 100vh;
+	background-color: rgb(240, 239, 239);
+}
+.page-section h1 {
+	font-weight: lighter;
+	color: #313133;
+	line-height: 1.1;
+	text-align: center;
+	margin-bottom: 2rem;
+}
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+	margin-bottom: 1.5rem;
+	text-align: center;
+  }
+  .marketing h2 {
+	font-weight: 400;
+  }
+  .marketing .col-lg-4 p {
+	margin-right: .75rem;
+	margin-left: .75rem;
+  }
+  .text-color {
+	  color: #0ac4ca;	  
+  }
+
 
 /* === CONTAINERS FOR FLEXBOX GRIDS === */
 
@@ -555,6 +585,7 @@ body {
 @media all and (min-width:768px) {
 	.container-narrow {
 		width: 80%;
+		height: 60vh;
 		margin: 0 auto 8% auto;
 		max-width: 1070px
 	}
@@ -581,14 +612,14 @@ body {
 	.carousel-item h1 {
 		position: relative;
 		font-size: calc(30px + (48 - 30) * ((100vw - 320px)/(1600 - 320)));
-		margin-bottom: 10px;
+		margin-bottom: 20px;
 	}
 }
 
 
 /* Carousel base class */
 .carousel {
-	margin-bottom: 2rem;
+	margin-bottom: 0rem;
   }
   /* Since positioning the image, we need to help out the caption */
   .carousel-caption {
@@ -608,11 +639,14 @@ body {
 	  display: flex;
 	  position: relative;
   }
+  .carousel-item h2 {
+	  color: #05f7ff;
+  }
   .carousel-item > img {
 	position: relative;
 	top: 0;
 	left: 0;
-	width: 100%;
+	width: auto;
   }
   .imgReview {
 	  background-size: cover;
@@ -623,7 +657,7 @@ body {
 
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-5 {
-	margin-bottom: 2rem;
+	margin-bottom: 0rem;
 	text-align: center;
   }
   .marketing h2 {
