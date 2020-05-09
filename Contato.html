@@ -90,7 +90,7 @@
 			<li><a href="PlanosdeSaude.html">Planos de Sáude</a></li>
 			<li><a href="Produtos.html">Produtos</a></li>
 
-			<li><a href="Contato.html" class="btn-solid btn-rounded"><i class="far fa-user"></i> Entre em Contato</a>
+			<li><a href="Contato.html" class="btn-solid btn-rounded"><i class="fas fa-envelope"></i> Entre em Contato</a>
 			</li>
 		</ul>
 	</div>
@@ -151,39 +151,38 @@
 			<div class="row">
 				<div class="col-md-8 text-left">
 					<h1>Entre em contato conosco</h1>
-					<h6>Estamos dispostos a fazer a cotação para o produto que desejar procurando o melhor custo x beneficio
-						com custo zero.</h6>
+					<h6>Estamos dispostos a fazer a cotação para o produto que desejar procurando o melhor custo x beneficio.</h6>
 					<br>
 					<form>
 						<div class="form-group row">
 							<label for="exampleFormControlInput1" class="col-sm-2 col-form-label">Nome:</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" id="" placeholder="Digite seu nome">
+								<input type="text" class="form-control" id="staticName" required="true" name="name" placeholder="Digite seu nome">
 							</div>
 						</div>
 						<div class="form-group row">
 							<label for="exampleFormControlInput1" class="col-sm-2 col-form-label">Email:</label>
 							<div class="col-sm-10">
-								<input type="email" class="form-control" id="staticEmail" placeholder="Digite seu email">
+								<input type="email" class="form-control" required="true" id="staticEmail" name="email" placeholder="Digite seu email">
 							</div>
 						</div>
 						<div class="form-group row">
 							<label for="exampleFormControlInput1" class="col-sm-2 col-form-label">Produto:</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" id=""
+								<input type="text" class="form-control" id="staticProduto" name="subject" required="true"
 									placeholder="Digite o produto de seu interesse">
 							</div>
 						</div>
 						<div class="form-group row">
 							<label for="" class="col-sm-2 col-form-label">Telefone:</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" id="" placeholder="(xx) xxxx-xxxx">
+								<input type="tel" class="form-control" id="phone" name="phone" required="true" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="(xx) xxxx-xxxx">
 							</div>
 						</div>
 						<div class="form-group row">
 							<label for="exampleFormControlTextarea1" class="col-sm-2 col-form-label">Mensagem:</label>
 							<div class="col-sm-10">
-								<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Digite sua mensagem"></textarea>
+								<textarea class="form-control" required="true" name="Message" id="exampleFormControlTextarea1" rows="3" placeholder="Digite sua mensagem"></textarea>
 							</div>
 						</div>
 					</form>

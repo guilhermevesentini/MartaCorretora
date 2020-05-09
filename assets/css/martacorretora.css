@@ -111,7 +111,11 @@ body {
 		font-size: 18px;
 	}
 	.container-menu-options-mobile ul li a:hover, .container-menu-options-mobile ul li a:active {
-		text-decoration: underline;
+		text-decoration: none;
+		border-radius: 50px;
+		padding:8px;
+		background-color: #0ac4ca;
+		border: 1px solid #0ac4ca;
 	}
 	/* Mobile menu option styled as button */
 	.container-menu-options-mobile ul li a.btn-solid {
@@ -128,7 +132,7 @@ body {
 		border-radius: 5px
 	}
 	.container-menu-options-mobile li a.btn-rounded {
-		border-radius: 100px
+		border-radius: 50px
 	}
 	/*== Dark mobile menu == */
 	.menu-mobile-dark {
@@ -161,13 +165,13 @@ body {
 		color: #fff
 	}
 	.menu-mobile-light li a.btn-solid {
-		background-color: #ff3366;
-		border-color: #ff3366;
+		background-color: #0ac4ca;
+		border-color: #0ac4ca;
 		color: #fff;
 	}
 	.menu-mobile-light li a.btn-solid:hover, .menu-mobile-light li a.btn-solid:active {
-		background-color: #28a745;
-		border-color: #28a745;
+		background-color: #09999e;
+		border-color: #09999e;
 		color: #fff;
 	}
 	.menu-mobile-light li a.btn-solid i {
@@ -175,7 +179,7 @@ body {
 	}
 	/*== Transparent mobile menu == */
 	.menu-mobile-transparent {
-		background-color: transparent
+		background-color: transparent;
 	}
 	.menu-mobile-transparent .item-icon .bar1, .menu-mobile-transparent .item-icon .bar2, .menu-mobile-transparent .item-icon .bar3 {
 		background-color: #fff;
@@ -312,7 +316,8 @@ body {
 	}
 }
 
-/* begin page content HERO*/
+/*===================== begin page content HERO ======================= */
+
 
 #hero-image {
 	height: 100vh;
@@ -350,12 +355,12 @@ body {
 	margin: 10px;
 }
 
-/* Services
--------------------------------------------------- */
+/*===================== Services ======================= */
+
 .page-section{
 	height: 100vh;
 	margin-top: -25px;
-	background-color: rgb(250, 249, 249);
+	background-color: rgb(231, 231, 231);
 	
 }
 .page-section .container {
@@ -382,13 +387,14 @@ body {
 	.page-section h3 {
 		font-size: calc(15px + (48 - 26) * ((100vw - 320px) / (1600 - 320)));
 	}
-	.page-section .col-md-4 {
+	.page-section .col-md-3{
 		margin: 10px;
 	}
 	
 }
 
-/* === CONTAINERS FOR FLEXBOX GRIDS === */
+/*===================== CONTAINERS FOR FLEXBOX GRIDS ======================= */
+
 .FlexCollumn {
 	height: 100%;
 	margin-top: 0;
@@ -556,7 +562,7 @@ body {
 	}
 }
 
-/* ==== EQUAL COLUMNS IN TWO COLUMN GRID ======= */
+/*===================== EQUAL COLUMNS IN TWO COLUMN GRID ======================= */
 
 /* Desktop */
 
@@ -618,7 +624,8 @@ body {
 		margin: 0 auto 12% auto
 	}
 }
-/* ========================== Testimonials  ============================== */
+
+/*===================== TESTIMONIALS ======================= */
 
 .carousel-item h1{
 	font-weight: lighter;
@@ -710,7 +717,25 @@ body {
 	}
 }
 
-/* ========================== Produtos  ============================== */
+/* ========================== AUTOMOVEL TIPOS ============================== */
+.tiposSeguro {
+	width: 100%;
+	margin: 0 auto;
+	border: 1px solid green;
+}
+.tiposSeguro p{
+	width: 70%;
+	height: 100%;
+	border-radius: 50%;
+	text-align: center;
+	border: 1px solid green;
+}
+.boxItem {
+	border: 1px solid green;
+	width: 100%;
+}
+
+/* ========================== PRODUTOS  ============================== */
 
 .container {
 	margin: 2%;
@@ -831,9 +856,7 @@ body {
 	}
 }
 
-/*===========================
-  --- Contact ----
-=========================== */
+/*===================== CONTATO ======================= */
 
 #Contato {
 	position: relative;
@@ -843,13 +866,14 @@ body {
 	margin-bottom: 5rem;
 }
 .formContato {
-	padding: 20px 30px;
+	padding: 5rem 5rem 1rem 5rem;
 }
 #Contato h1 {	
 	color: rgb(55, 55, 80);
 	line-height: 1;
 	text-align: left;
-	font-size: calc(30px + (48 - 30) * ((100vw - 320px)/(1600 - 320)))
+	font-size: calc(30px + (48 - 30) * ((100vw - 320px)/(1600 - 320)));
+	font-weight: lighter;
 }
 
 .formContato input:focus, .formContato textarea:focus {
@@ -892,7 +916,7 @@ body {
 	}
   }
 
-/*footer*/
+/*===================== FOOTER ======================= */
 
 .footer {
 	background-color: #242429;
