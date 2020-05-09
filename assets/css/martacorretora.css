@@ -3,11 +3,11 @@
 * {
 	box-sizing: border-box;
 	padding: 0;
-	margin: 0
+	margin: 0;
 }
 
 body, html {
-	height: auto;
+	height: 100%;
 }
 
 body {
@@ -24,7 +24,7 @@ body {
 
 .img-fluid {
 	width: 100%;
-	height: auto
+	height: auto;
 }
 
 .no-margin-bottom {
@@ -315,13 +315,14 @@ body {
 /* begin page content HERO*/
 
 #hero-image {
-	position: relative;
-	overflow: hidden;
 	height: 100vh;
+	margin: 0px;
+	position: relative;
+	overflow: hidden;	
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	margin-bottom: 4rem;
+	
 }
 
 .hero-text {
@@ -353,7 +354,13 @@ body {
 -------------------------------------------------- */
 .page-section{
 	height: 100vh;
-	background-color: rgb(240, 239, 239);
+	margin-top: -25px;
+	background-color: rgb(250, 249, 249);
+	
+}
+.page-section .container {
+	padding-top: 3rem;
+	margin-bottom: 0rem;
 }
 .page-section h1 {
 	font-weight: lighter;
@@ -363,24 +370,36 @@ body {
 	margin-bottom: 2rem;
 }
 /* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
-	margin-bottom: 1.5rem;
-	text-align: center;
-  }
-  .marketing h2 {
-	font-weight: 400;
-  }
-  .marketing .col-lg-4 p {
-	margin-right: .75rem;
-	margin-left: .75rem;
-  }
-  .text-color {
-	  color: #0ac4ca;	  
-  }
-
+.text-color {
+	color: #0ac4ca;	  
+}
+@media all and (max-width:768px) {
+	.page-section{
+		font-size: calc(12px + (48 - 26) * ((100vw - 320px) / (1600 - 320)));
+		margin: 0px 80%;
+		display: inline;
+	}
+	.page-section h3 {
+		font-size: calc(15px + (48 - 26) * ((100vw - 320px) / (1600 - 320)));
+	}
+	.page-section .col-md-4 {
+		margin: 10px;
+	}
+	
+}
 
 /* === CONTAINERS FOR FLEXBOX GRIDS === */
-
+.FlexCollumn {
+	height: 100%;
+	margin-top: 0;
+}
+.FlexCollumn h1 {
+	font-weight: lighter;
+	color: #313331;
+	line-height: 1.1;
+	text-align: center;
+	padding: 4rem 0px;
+}
 .container-full {
 	width: 100%;
 	margin: 0 auto
@@ -620,6 +639,10 @@ body {
 /* Carousel base class */
 .carousel {
 	margin-bottom: 0rem;
+	background-image: url("../img/img3.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;	
+
   }
   /* Since positioning the image, we need to help out the caption */
   .carousel-caption {
@@ -668,6 +691,24 @@ body {
 	margin-left: .75rem;
   }
   
+.legalSection {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+.legalSection h1{
+	font-weight: lighter;
+}
+.legalSection p {
+	width: 100%;
+}
+@media all and (max-width:768px) {
+	.legalSection {
+		font-size: calc(12px + (48 - 30) * ((100vw - 320px)/(1600 - 320)));
+		padding: 0px 20px;
+		width: 100%;
+	}
+}
 
 /* ========================== Produtos  ============================== */
 
