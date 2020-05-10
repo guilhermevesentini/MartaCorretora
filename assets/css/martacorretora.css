@@ -761,6 +761,15 @@ h1 {
 	font-weight: lighter;
 	font-size: 25px;
 }
+@media all and (max-width:768px) {
+	.gradienteBox {
+		padding: 10px 5px 0px 5px;
+		width: 0px;
+	}
+	.gradienteBox p {
+		font-size: calc(20px + (48 - 30) * ((100vw - 320px)/(1600 - 320)));
+	}
+}
 
 /* ========================== AUTOMOVEL SEGURADORAS ============================== */
 
@@ -772,6 +781,17 @@ h1 {
 	height:115px;
 	width:125px;
 	padding: 10px;
+}
+@media all and (max-width:768px) {
+	.seguradoras{
+		height: 100vh;
+		font-size: calc(8px + (48 - 30) * ((100vw - 320px)/(1600 - 320)));
+	}	
+}
+@media all and (max-width:768px) {
+	.headerContainer h1{
+		font-size: calc(30px + (48 - 30) * ((100vw - 320px)/(1600 - 320)));
+	}
 }
 
 /* ========================== PRODUTOS  ============================== */
@@ -810,8 +830,8 @@ h1 {
 }
 .box-shadow {
 	-webkit-box-shadow: 5px 10px 10px 2px rgba(179,179,179,0.84);
--moz-box-shadow: 5px 10px 10px 2px rgba(179,179,179,0.84);
-box-shadow: 5px 10px 10px 2px rgba(179,179,179,0.84);
+	-moz-box-shadow: 5px 10px 10px 2px rgba(179,179,179,0.84);
+	box-shadow: 5px 10px 10px 2px rgba(179,179,179,0.84);
 }
 
 /* Desktop */
