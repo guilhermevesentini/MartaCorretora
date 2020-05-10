@@ -762,12 +762,17 @@ h1 {
 	font-size: 25px;
 }
 
-.FlexCollumn img {
-	margin: 20px;
-	width: 120px; 
-	height: 120px;
-}
+/* ========================== AUTOMOVEL SEGURADORAS ============================== */
 
+.seguradoras {
+	height: 70vh;
+}
+.seguradoras img {
+	margin: 10px auto; 
+	height:115px;
+	width:125px;
+	padding: 10px;
+}
 
 /* ========================== PRODUTOS  ============================== */
 
