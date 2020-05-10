@@ -70,6 +70,34 @@
     }
   </style>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
 </head>
 
 <body>
@@ -101,7 +129,8 @@
   <!-- end menu mobile -->
 
   <!-- begin page content -->
-  <main>
+
+  <head>
     <div id="hero-image">
 
       <!-- top bar -->
@@ -148,134 +177,294 @@
       </div>
     </div>
     <!-- end Hero Page -->
-    <!--- Flex collumns --->
-    <div class="FlexCollumn">
-      <h1 class="text-uppercase text-center">Tipos de Seguro de Automóvel</h1>
-      <div class="container">
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae officia quidem cupiditate rerum dignissimos amet libero asperiores perspiciatis. Qui quam minima, cumque officia fugiat ex deserunt sequi amet? Qui, sunt?</p>
-      </div>  
-    </div>    
+  </head>
+  <main>
+    <!--- Content Page --->
+    <div class="FlexCollumn mb-0">
+      <div class="headerContainer col-md-10 mb-0">
+        <h1 class="text-uppercase text-center mb-0">Tipos de Seguro de Automóvel</h1>
+        <p>Cada cliente exige uma necessidade diferente referente aos nossos contratos de seguro automóvel, é de extrema
+          importância que seja feita uma triagem nos perfis de nossos clientes para encontrarmos a melhor oferta.</p>
+        <p>O valor de um seguro pode variar de acordo com o tipo de contratação que pode ser: <i>Seguro Completo </i>ou
+          <i> Compreensivo</i>,<i> seguro para terceiros</i>,<i> seguro para acidentes pessoais</i>,<i> seguro para
+            passageiros</i>,<i> somente instalação de rastreadores</i>,<i> bloqueadores ou localizadores</i>.</p>
+        <p>Estaremos a disposição para esclarecer de qualquer dúvida.</p>
+        <h1 class="text-uppercase text-center mb-0">Como contratar o seguro auto?</h1>
+        <p>Uma vez em contato com o corretor, seja por telefone, email ou Whatsapp. Será necessário responder um
+          questionário de avaliação com todas informações exigidas pelas seguradoras para realização do orçamento.</p>
+        <p>Depois de feita a pesquisa encaminharemos as propostas com preços e planos acordo com suas preferências para
+          sua avaliação para qual proposta e companhia/seguradora tenha interesse. Conosco suas informações estão
+          protegidas de acordo com o <a href="https://www.fenacor.org.br/Servicos/CodigoDeEtica">Código de ética dos
+            Corretores.</a></p>
+      </div>
+    </div>
+    <div class="tipoProdutos">
+      <div class="headerContainer col-md-10 mb-0">
+        <h1 class="text-uppercase text-center">Tipos de Produtos</h1>
+        <div class="row text-center justify-content-center">
+          <div class="col-md-3 gradienteBox">
+            <p>Seguro Auto Jovem</p>
+          </div>
+          <div class="col-md-4 gradienteBox">
+            <p>Seguro Auto Mulher</p>
+          </div>
+          <div class="col-md-3 gradienteBox">
+            <p>Seguro Auto Seniôr</p>
+          </div>
+        </div>
+        <div class="row text-center justify-content-center">
+          <div class="col-md-3 gradienteBox">
+            <p>Seguro Auto Usados</p>
+          </div>
+          <div class="col-md-4 gradienteBox">
+            <p>Seguro Auto Financiados</p>
+          </div>
+          <div class="col-md-3 gradienteBox">
+            <p>Seguro Auto PCD</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contentPage mt-4">
+      <div id="seguroautojovem" class="container-narrow">
+        <div class="flex-grid-two">
+          <div class="col-gutter">
+            <h2>Seguro Auto Jovem</h2>
+            <p>O seguro auto jovem é um produto que pretende oferecer um suporte completo e a garantia de um plano
+              para os jovens que estão contratando um seguro auto pela primeira vez.
+
+              Esse tipo de produto é oferecido por algumas seguradoras. Para finalizar a contratação, provavelmente,
+              haverá a solicitação de algum curso de direção defensiva.
+            </p>
+          </div>
+          <div class="col-gutter col-vertical-center">
+            <img src="assets/img/autojovem.jpg" alt="sample image" class="img-fluid">
+          </div>
+        </div>
+      </div>
+      <div class="container-narrow">
+        <div class="flex-grid-two">
+          <div class="col-gutter">
+            <h2>Seguro Auto Mulher</h2>
+            <p>O seguro auto mulher é voltado especificamente para o público feminino, com coberturas adequadas às
+              necessidades mais corriqueiras das mulheres, principalmente quando o assunto é trânsito e carro. Por
+              ser um público mais zeloso no trânsito, o índice de sinistralidade é mais baixo.</p>
+          </div>
+          <div class="col-gutter col-vertical-center">
+            <img src="assets/img/auto-mulher.jpg" alt="sample image" class="img-fluid">
+          </div>
+        </div>
+      </div>
+      <div class="container-narrow">
+        <div class="flex-grid-two">
+          <div class="col-gutter">
+            <h2>Seguro Auto Seniôr</h2>
+            <p>O Porto Seguro Auto Sênior oferece coberturas completas para seu carro e ainda traz facilidades
+              para seu dia a dia, como serviços de instalação para sua casa, configuração de aparelhos de
+              informática e eletrônicos, além de 20% de desconto no valor da franquia.</p>
+          </div>
+          <div class="col-gutter col-vertical-center">
+            <img src="assets/img/autosenior.jpg" alt="sample image" class="img-fluid">
+          </div>
+        </div>
+      </div> 
+      <div class="container-narrow">
+        <div class="flex-grid-two">
+          <div class="col-gutter">
+            <h2>Seguro Auto Usado</h2>
+            <p>O seguro para carro usado tem as mesmas coberturas que um carro zero quilômentro, Porem, no
+              momento em que estiver fechando o negócio a seguradora irá solicitar uma vistoria prévia do seu
+              veículo, para ter uma análise completa da atual situação do seu automóvel.</p>
+          </div>
+          <div class="col-gutter col-vertical-center">
+            <img src="assets/img/carrousado.jpg" alt="sample image" class="img-fluid">
+          </div>
+        </div>
+      </div>    
+      <div class="container-narrow">
+        <div class="flex-grid-two">
+          <div class="col-gutter">
+            <h2>Seguro Auto Financiado</h2>
+            <p>O seguro é o mesmo para um carro quitado, o que difere é se acontecer um sinistro e houver a
+              necessidade de receber a indenização de perda total.
+              <br>O pagamento da indenização pode ser feita de suas maneiras, uma seria você quitar o valor
+              restante do financiamento direto com a financeira ou com a montadora do veículo, a outra maneira
+              seria a seguradora quitar seu financiamento e receber a diferença dos valores até o final do seu
+              contrato. </p>
+          </div>
+          <div class="col-gutter col-vertical-center">
+            <img src="assets/img/carrosfinanciados.jpg" alt="sample image" class="img-fluid">
+          </div>
+        </div>
+      </div>
+      <div class="container-narrow">
+        <div class="flex-grid-two">
+          <div class="col-gutter">
+            <h2>Seguro Auto PCD</h2>
+            <p>Poucas pessoas sabem da possibilidade de comprar carros isentos de impostos e seguro PCD.
+              <br>
+              A contratação desse seguro é analisada por diferente grupos específicos para usufruirem desse
+              direito, sendo assim portadores de limitações físicas ou mentais. Entre em contato com a Marta
+              Corretora para mais informações sobre esse seguro que é de seu direito se dentro dessas
+              condições.
+            </p>
+          </div>
+          <div class="col-gutter col-vertical-center">
+            <img src="assets/img/pcd.png" alt="sample image" class="img-fluid">
+          </div>
+        </div>
+      </div>                  
+    </div> 
+    <div class="FlexCollumn mb-0">
+      <div class="headerContainer mb-0">
+        <h1 class="text-uppercase text-center mb-0">Trabalhamos com 10 Seguradoras</h1>         
+      </div>
+      <div class="">
+        <div class="row text-center justify-content-center">
+          <div class="d-flex flex-wrap">
+            <img src="assets/img/porto-seguro-logo-4-1.png" alt="porto seguro logo">
+          </div>
+          <div class="d-flex flex-wrap">
+            <img src="assets/img/porto-seguro-logo-4-1.png" alt="porto seguro logo">
+          </div>
+          <div class="d-flex flex-wrap">
+            <img src="assets/img/porto-seguro-logo-4-1.png" alt="porto seguro logo">
+          </div>
+          <div class="d-flex flex-wrap">
+            <img src="assets/img/porto-seguro-logo-4-1.png" alt="porto seguro logo">
+          </div>
+          <div class="d-flex flex-wrap">
+            <img src="assets/img/porto-seguro-logo-4-1.png" alt="porto seguro logo">
+          </div>
+          <div class="d-flex flex-wrap">
+            <img src="assets/img/porto-seguro-logo-4-1.png" alt="porto seguro logo">
+          </div>
+          
+        </div>
+      </div>
+    </div>              
   </main>
   <!-- Footer -->
-  <div class="footer container-footer">
+  <footer>
+    <div class="footer container-footer">
 
-    <!-- Footer Links -->
-    <div class="container text-center text-md-left mt-0">
+      <!-- Footer Links -->
+      <div class="container text-center text-md-left mt-0">
 
-      <!-- Grid row -->
-      <div class="row">
+        <!-- Grid row -->
+        <div class="row">
 
-        <!-- Grid column -->
-        <div class="col-xs-2 col-md-3 col-lg-4 col-xl-3">
+          <!-- Grid column -->
+          <div class="col-xs-2 col-md-3 col-lg-4 col-xl-3">
 
-          <!-- Content -->
-          <h4 class="text-uppercase font-weight-bold"><span class="Martacolor">Marta</span> Corretora</h4>
-          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 50px;">
-          <p>Fundada em 1998 ao longo de todos estes anos a Marta Corretora de seguros adquiriu extenso e
-            aprofundado conhecimento
-            das melhores práticas em Corretagem e Consultoria de Seguros.</p>
+            <!-- Content -->
+            <h4 class="text-uppercase font-weight-bold"><span class="Martacolor">Marta</span> Corretora</h4>
+            <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 50px;">
+            <p>Fundada em 1998 ao longo de todos estes anos a Marta Corretora de seguros adquiriu extenso e
+              aprofundado conhecimento
+              das melhores práticas em Corretagem e Consultoria de Seguros.</p>
 
-        </div>
-        <!-- Grid column -->
+          </div>
+          <!-- Grid column -->
 
-        <!-- Grid column -->
-        <div class="col-xs-2 col-md-2 col-lg-2 col-xl-2 mx-auto">
+          <!-- Grid column -->
+          <div class="col-xs-2 col-md-2 col-lg-2 col-xl-2 mx-auto">
 
-          <!-- Links -->
-          <h5 class="font-weight-bold text-uppercase">Produtos</h5>
-          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase">Produtos</h5>
+            <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
 
-          <ul class="list-unstyled">
-            <li>
-              <p>
-                <a href="Auto.html">Seguro Auto</a>
-              </p>
-            </li>
-            <li>
-              <p>
-                <a href="PlanosdeSaude.html">Planos de Sáude</a>
-              </p>
-            </li>
-            <li>
-              <p>
-                <a href="Produtos.html">Produtos</a>
-              </p>
-            </li>
-
-
-          </ul>
-
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-xs-2 col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-
-          <!-- Links -->
-          <h5 class="text-uppercase font-weight-bold">Contato</h5>
-          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 80px;">
-          <p>
-            <i class="fas fa-home mr-2"></i>Rua Igrapiúna, Número 15, Tatuapé - SP
-          </p>
-          <p>
-            <i class="fas fa-envelope mr-2"></i><a href="mailto:Contato@martacorretora.com.br"
-              target="_blank">Contato@Martacorretora.com.br
-            </a>
-          <p>
-            <i class="fas fa-phone mr-2"></i>(11) 99757-1723
-          </p>
-          <p>
-            <i class="fas fa-phone mr-2"></i>(11) 2091-7245
-          </p>
+            <ul class="list-unstyled">
+              <li>
+                <p>
+                  <a href="Auto.html">Seguro Auto</a>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <a href="PlanosdeSaude.html">Planos de Sáude</a>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <a href="Produtos.html">Produtos</a>
+                </p>
+              </li>
 
 
-        </div>
-        <!-- Grid column -->
-        <div class="col-xs-2 col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            </ul>
 
-          <!-- Links -->
-          <h5 class="font-weight-bold text-uppercase mb-4">Redes Sociais</h5>
-          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          </div>
+          <!-- Grid column -->
 
-          <!-- Social buttons -->
-          <ul class="list-unstyled list-inline text-left social">
-            <li class="list-inline-item">
-              <a class="btn-floating mx-0" href="https://www.facebook.com/MartaCorretora.com.br/">
-                <i class="fab fa-facebook-square"></i>
+          <!-- Grid column -->
+          <div class="col-xs-2 col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+            <!-- Links -->
+            <h5 class="text-uppercase font-weight-bold">Contato</h5>
+            <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 80px;">
+            <p>
+              <i class="fas fa-home mr-2"></i>Rua Igrapiúna, Número 15, Tatuapé - SP
+            </p>
+            <p>
+              <i class="fas fa-envelope mr-2"></i><a href="mailto:Contato@martacorretora.com.br"
+                target="_blank">Contato@Martacorretora.com.br
               </a>
-            </li>
-            <li class="list-inline-item">
-              <a class="btn-floating mx-1">
-                <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5511997571723">
-                  <i class="fab fa-whatsapp-square"></i>
+            <p>
+              <i class="fas fa-phone mr-2"></i>(11) 99757-1723
+            </p>
+            <p>
+              <i class="fas fa-phone mr-2"></i>(11) 2091-7245
+            </p>
+
+
+          </div>
+          <!-- Grid column -->
+          <div class="col-xs-2 col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mb-4">Redes Sociais</h5>
+            <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+
+            <!-- Social buttons -->
+            <ul class="list-unstyled list-inline text-left social">
+              <li class="list-inline-item">
+                <a class="btn-floating mx-0" href="https://www.facebook.com/MartaCorretora.com.br/">
+                  <i class="fab fa-facebook-square"></i>
                 </a>
-            </li>
-            <li class="list-inline-item">
-              <a class="btn-floating mx-1">
-                <a href="#">
-                  <i class="fab fa-instagram-square"></i>
-                </a>
-            </li>
-          </ul>
-          <!-- Social buttons -->
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating mx-1">
+                  <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5511997571723">
+                    <i class="fab fa-whatsapp-square"></i>
+                  </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating mx-1">
+                  <a href="#">
+                    <i class="fab fa-instagram-square"></i>
+                  </a>
+              </li>
+            </ul>
+            <!-- Social buttons -->
+
+          </div>
+          <!-- Grid column -->
 
         </div>
-        <!-- Grid column -->
+        <!-- Grid row -->
 
       </div>
-      <!-- Grid row -->
+      <!-- Footer Links -->
 
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center text-white-50 copyright">© 2019 Copyright:
+        <a class="dark-grey-text" href="https://vesentini.netlify.app/" target="_blank"> Designed By Guilherme
+          Vesentini</a>
+      </div>
+      <!-- Copyright -->
     </div>
-    <!-- Footer Links -->
-
-
-    <!-- Copyright -->
-    <div class="footer-copyright text-center text-white-50 copyright">© 2019 Copyright:
-      <a class="dark-grey-text" href="https://vesentini.netlify.app/" target="_blank"> Designed By Guilherme
-        Vesentini</a>
-    </div>
-    <!-- Copyright -->
-  </div>
   </footer>
   <!-- Footer -->
 
