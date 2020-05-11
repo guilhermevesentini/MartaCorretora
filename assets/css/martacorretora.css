@@ -356,6 +356,9 @@ h1 {
 	font-weight: 700;
 	text-transform: uppercase;
 }
+.hero-text > a {
+	text-decoration: none;
+}
 
 .hero-text h1 {
 	letter-spacing: 0.2em;
@@ -412,7 +415,7 @@ h1 {
 
 .FlexCollumn {
 	height: 100%;
-	margin-top: 0;	
+	margin: 0 auto;
 }
 .FlexCollumn h1 {
 	font-weight: lighter;
@@ -431,7 +434,7 @@ h1 {
 @media all and (min-width:768px) {
 	.container-wide {
 		width: 90%;
-		margin: 0 auto 8% auto
+		margin: 0 auto 8% auto;
 	}
 	.container-narrow {
 		width: 80%;
@@ -445,11 +448,11 @@ h1 {
 @media all and (max-width:767px) {
 	.container-wide {
 		width: 100%;
-		margin: 0 auto 12% auto
+		margin: 0 auto 12% auto;
 	}
 	.container-narrow {
 		width: 70%;
-		margin: 0 auto 12% auto
+		margin: 0 auto 12% auto;
 	}
 }
 
@@ -485,18 +488,18 @@ h1 {
 .flex-grid-two h2, .flex-grid-two h3 {
 	font-weight: lighter;
 	color: #183b56;
-	line-height: 1.1;
+	line-height: 1;
 }
 
 .flex-grid-two h2 {
-	font-size: calc(26px + (48 - 26) * ((100vw - 320px) / (1600 - 320)));
+	font-size: calc(20px + (48 - 26) * ((100vw - 320px) / (1600 - 320)));
 	margin-bottom: 3%;
 }
 
 .flex-grid-two p {
 	font-weight: lighter;
 	color: rgb(8, 8, 8);
-	line-height: 1.5;
+	line-height: 1.2;
 	margin-bottom: 6%;
 	font-size: calc(15px + (20 - 15) * ((100vw - 320px) / (1600 - 320)));
 }
@@ -583,16 +586,16 @@ h1 {
 
 @media all and (min-width:768px) {
 	.flex-grid-two .col-gutter {
-		width: 46%
+		width: 46%;
 	}
 	.flex-grid-two .col-gutter:nth-child(1) {
-		margin-right: 8%
+		margin-right: 8%;
 	}
 	.flex-grid-two .col-gutter:nth-child(2) {
-		margin-right: 0
+		margin-right: 0;
 	}
 	.flex-grid-two .col-no-gutter {
-		width: 50%
+		width: 50%;
 	}
 	.flex-grid-two .col-vertical-center {
 		align-self: center
@@ -730,37 +733,59 @@ h1 {
 
 .headerContainer {
 	margin: 0 auto;
-	height: auto;
-	padding-bottom: 4rem;
+	padding: 25px 0px;
 }
 .headerContainer .row {
 	text-align: center;
 }
-.tipoProdutos h1 {
+.headerContainer h1 {
 	font-weight: lighter;
 	color: #313331;
 	line-height: 1.1;
 	text-align: center;
-	padding: 4rem 0px 1rem 0px;
+	margin-bottom: 1rem;
 }
+.headerContainer h2 {
+	font-weight: lighter;
+	color: #313331;
+	text-align: left;
+}
+.headerContainer p {
+	margin: 0 5%;
+	text-align: justify;
+}
+.headerContainer img {
+	width: 300px;
+	height: 200px;
+}
+@media all and (max-width:768px) {
+	
+}
+
+/*-- produtos --*/
+
 .gradienteBox {
 	border-width: 2px;
-	margin: 10px;
-	padding: 20px 20px 10px 20px;
+	margin: 5px;
 	border-style: solid;
 	border-image-source: linear-gradient(to left, #1e706c, #05f7ff);
 	border-image-slice: 1;	
 	cursor: pointer;
+	padding: 10px 0px;
 }
 .gradienteBox:hover{
 	background-color: #6ad6da;	
 	cursor: pointer;
 	text-decoration: none;
 }
+.headerContainer .row{
+	margin: 0 auto;
+}
 
 .gradienteBox p {
 	font-weight: lighter;
-	font-size: 25px;
+	font-size: 20px;
+	text-align: center;
 }
 @media all and (max-width:768px) {
 	.gradienteBox {
@@ -774,18 +799,13 @@ h1 {
 
 /* ========================== AUTOMOVEL SEGURADORAS ============================== */
 
-.seguradoras {
-	height: 70vh;
-}
-.seguradoras img {
-	margin: 10px auto; 
+.seguradoras img { 
 	height:115px;
 	width:125px;
-	padding: 10px;
+	padding: 20px;
 }
 @media all and (max-width:768px) {
 	.seguradoras{
-		height: 100vh;
 		font-size: calc(8px + (48 - 30) * ((100vw - 320px)/(1600 - 320)));
 	}
 	.headerContainer h1{
@@ -798,8 +818,7 @@ h1 {
 		width: 100px;
 	}
 	.seguradoras{
-		height: 100vh;
-		
+		height: 60vh;		
 	}
 }
 @media all and (max-width:374px) {
@@ -808,7 +827,7 @@ h1 {
 		width: 80px;
 	}
 	.seguradoras{
-		height: 100vh;		
+		height: 50vh;		
 	}
 }
 
@@ -889,6 +908,23 @@ h1 {
 	}
 }
 
+/* ========================== CONTATO AUTO ============================== */
+
+.contatoAuto a  {
+	color: #313331 !important;
+	display: inline-block;
+	text-decoration: none !important;
+}
+@media screen and (max-width: 786px) {
+	.hiddenContentMobile {
+	  visibility: hidden;
+	  clear: both;
+	  float: center;
+	  margin: 10px auto 5px 20px;
+	  width: 28%;
+	  display: none;
+	}
+  }
 
 /* ========================== FORM WRAPPER  ============================== */
 
