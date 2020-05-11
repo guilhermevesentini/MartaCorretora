@@ -210,7 +210,7 @@ h1 {
 
 @media all and (max-width:767px) {
 	.container-menu-desktop {
-		display: none
+		display: none;
 	}
 }
 
@@ -696,6 +696,12 @@ h1 {
 	  width: 100%;
 	  height: 300px;
   }
+  @media all and (max-width:768px) {
+	.carousel-inner h2 {
+		font-size: calc(20px + (48 - 30) * ((100vw - 320px)/(1600 - 320)));
+		
+	}
+}
 
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-5 {
@@ -834,7 +840,7 @@ h1 {
 
 /* ========================== PRODUTOS  ============================== */
 
-.container {
+.produtoPage > .container {
 	margin: 2%;
 	position: relative;
 	height: auto;
@@ -876,7 +882,6 @@ h1 {
 @media all and (max-width:768px) {
 	.container {
 		position: relative;
-		padding: 15% 1%;
 	}
 }
 
@@ -885,8 +890,6 @@ h1 {
 @media all and (min-width:768px) {
 	.container {
 		position: relative;
-		padding: 2% 1%;
-		width: 80%;
 	}
 }
 
@@ -895,7 +898,6 @@ h1 {
 @media all and ( max-width:390px) {
 	.container {
 		position: relative;
-		padding: 30% 1%;
 	}
 }
 
@@ -904,7 +906,7 @@ h1 {
 @media all and ( min-width:391px) and (max-width:561px) {
 	.container {
 		position: relative;
-		padding: 25% 1%;
+		padding: 5% 1%;
 	}
 }
 
@@ -928,9 +930,6 @@ h1 {
 
 /* ========================== FORM WRAPPER  ============================== */
 
-body {
-	background-color: #fef1ef
-}
 
 .container-form {
 	margin-left: auto;
@@ -962,7 +961,6 @@ body {
 @media all and (max-width:767px) {
 	.container-form {
 		width: 100%;
-		padding: 100px 20px 90px 20px;
 	}
 	.container-form h1 {
 		margin: 0 0 5% 0
