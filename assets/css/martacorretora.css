@@ -70,7 +70,6 @@ h1 {
 		display: block;
 		width: 70px;
 		height: 70px;
-		;
 		margin-left: 15px;
 		margin-top: 15px;
 	}
@@ -93,7 +92,7 @@ h1 {
 		transform: rotate(-45deg) translate(-9px, 6px);
 	}
 	.change .bar2 {
-		opacity: 0
+		opacity: 0;
 	}
 	.change .bar3 {
 		-webkit-transform: rotate(45deg) translate(-8px, -8px);
@@ -108,7 +107,7 @@ h1 {
 		width: 320px;
 		right: -320px;
 		padding-top: 30px;
-		transition: 0.5s;
+		transition: 1s;
 		z-index: 99;
 	}
 	.container-menu-options-mobile ul li {
@@ -116,7 +115,7 @@ h1 {
 		margin-left: 40px;
 		margin-bottom: 30px;
 		display: block;
-		line-height: 1
+		line-height: 1.1;
 	}
 	.container-menu-options-mobile ul li a {
 		text-decoration: none;
@@ -125,7 +124,7 @@ h1 {
 	}
 	.container-menu-options-mobile ul li a:hover, .container-menu-options-mobile ul li a:active {
 		text-decoration: none;
-		border-radius: 50px;
+		border-radius: 30px;
 		padding:8px;
 		background-color: #0ac4ca;
 		border: 1px solid #0ac4ca;
@@ -169,7 +168,7 @@ h1 {
 	}
 	/*== Light mobile menu == */
 	.menu-mobile-light {
-		background-color: #4f4f50
+		background-color: #424242;
 	}
 	.menu-mobile-light .item-icon .bar1, .menu-mobile-light .item-icon .bar2, .menu-mobile-light .item-icon .bar3 {
 		background-color: #fff;
@@ -407,8 +406,18 @@ h1 {
 	.page-section .col-md-3{
 		margin: 10px;
 	}
+	.fa-stack {
+		font-size: calc(10px + (48 - 26) * ((100vw - 320px) / (1600 - 320)));
+	}
 	
 }
+@media all and (max-width:768px){
+	.fa-stack {
+		font-size: 3rem !important;
+	}
+}
+
+
 
 /*===================== CONTAINERS FOR FLEXBOX GRIDS ======================= */
 
@@ -498,9 +507,8 @@ h1 {
 .flex-grid-two p {
 	font-weight: lighter;
 	color: rgb(8, 8, 8);
-	line-height: 1.2;
 	margin-bottom: 6%;
-	font-size: calc(15px + (20 - 15) * ((100vw - 320px) / (1600 - 320)));
+	font-size: calc(12px + (22 - 15) * ((100vw - 320px) / (1600 - 320)));
 }
 
 /* Desktop */
@@ -523,7 +531,7 @@ h1 {
 
 @media all and (min-width:768px) {
 	.flex-grid-two .col-no-gutter .col-no-gutter-inner {
-		padding: 0 10%
+		padding: 0 10%;
 	}
 }
 
@@ -533,7 +541,7 @@ h1 {
 	.flex-grid-two hr {
 		margin-top: 15%;
 		margin-left: auto;
-		margin-right: auto
+		margin-right: auto;
 	}
 }
 
@@ -541,7 +549,7 @@ h1 {
 
 @media all and (max-width:767px) {
 	.flex-grid-two .col-no-gutter .col-no-gutter-inner {
-		padding: 5% 10%
+		padding: 5% 10%;
 	}
 }
 
@@ -605,7 +613,7 @@ h1 {
 
 @media all and (max-width:767px) {
 	.flex-grid-two .col-gutter, .flex-grid-two .col-no-gutter {
-		width: 100%
+		width: 100%;
 	}
 	.flex-grid-two .col-no-gutter h2 {
 		margin-top: 5%
@@ -631,8 +639,14 @@ h1 {
 
 @media all and (max-width:767px) {
 	.container-narrow {
-		width: 70%;
-		margin: 0 auto 12% auto
+		width: 80%;
+		margin: 0 auto 12% auto;		
+	}
+	.container-narrow p {
+		font-size: calc(15px + (20 - 15) * ((100vw - 320px) / (1600 - 320)));		
+	}
+	.container-narrow img {
+		margin-top: 20px;
 	}
 }
 
@@ -648,8 +662,13 @@ h1 {
 @media all and (max-width:768px) {
 	.carousel-item h1 {
 		position: relative;
-		font-size: calc(30px + (48 - 30) * ((100vw - 320px)/(1600 - 320)));
+		font-size: calc(25px + (48 - 30) * ((100vw - 320px)/(1600 - 320)));
 		margin-bottom: 20px;
+	}
+}
+@media all and (max-width:768px) {
+	.carousel-item p {
+		font-size: calc(13px + (48 - 30) * ((100vw - 320px)/(1600 - 320)));
 	}
 }
 
@@ -659,7 +678,7 @@ h1 {
 	margin-bottom: 0rem;
 	background-image: url("../img/img3.jpg");
 	background-size: cover;
-	background-repeat: no-repeat;	
+	background-repeat: no-repeat;
 
   }
   /* Since positioning the image, we need to help out the caption */
@@ -693,7 +712,7 @@ h1 {
 	  background-size: cover;
 	  background-repeat: no-repeat;
 	  width: 100%;
-	  height: 300px;
+	  height: 100%;
   }
   @media all and (max-width:768px) {
 	.carousel-inner h2 {
@@ -725,6 +744,7 @@ h1 {
 }
 .legalSection p {
 	width: 100%;
+	text-align: justify;
 }
 @media all and (max-width:768px) {
 	.legalSection {
@@ -840,17 +860,13 @@ h1 {
 /* ========================== PRODUTOS  ============================== */
 
 .produtoPage > .container {
-	margin: 2%;
+	margin: 5% 0px;
 	position: relative;
 	height: auto;
-	margin: 5% 0px;
 }
-
-.banner {
-	margin: -10px 2px 15px 2px;
-	width: 100%;
+.produtoPage {
+	margin: 0 5%;
 }
-
 .item-logo-produtos-desktop {
 	display: block;
 	margin-left: 8px;
@@ -882,6 +898,7 @@ h1 {
 @media all and (max-width:768px) {
 	.container {
 		position: relative;
+		padding: 2rem 0px;
 	}
 }
 
@@ -896,6 +913,7 @@ h1 {
 @media all and (min-width:768px) {
 	.container {
 		position: relative;		
+		padding: 3rem 0px;
 	}
 	.produtoPage .row {
 		margin-bottom: 20px;
@@ -1051,7 +1069,7 @@ h1 {
 	color: #d3d3d3;
 	font-weight: lighter;
 	font-size: normal;
-	padding-top: 20px;
+	padding-top: 10px;
 }
 .footer a {
 	color: #fff;
@@ -1066,7 +1084,7 @@ h1 {
 }
 
 .social {
-	font-size: 25px;
+	font-size: 30px;
 	padding: 0%;
 }
 
