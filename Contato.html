@@ -139,7 +139,7 @@
 					<h6>Estamos dispostos a fazer a cotação para o produto que desejar procurando o melhor custo x beneficio.</h6>
 					<br>
 					<form method="post" action="http://www18.locaweb.com.br/scripts/FormMail.pl">
-						<input type="hidden" name="redirect" value="http://www.dominio.com.br/obrigado.htm">
+						<input type="hidden" name="redirect" value="http://www.martacorretora.com.br/obrigado.html">
 						<div class="form-group row">
 							<label for="exampleFormControlInput1" class="col-sm-2 col-form-label">Nome:</label>
 							<div class="col-sm-10">
@@ -148,8 +148,9 @@
 						</div>
 						<div class="form-group row">
 							<label for="exampleFormControlInput1" class="col-sm-2 col-form-label">Email:</label>
-							<div class="col-sm-10">
-								<input type="hidden" name="email" value="email@dominio.com.br"/>
+							<div class="col-sm-10">								
+								<input type="hidden" name="replyto" value="email" />
+								<input type="hidden" name="recipient" value="contato@martacorretora.com.br,guilherme1992@hotmail.com,marta@mcrcorretora.com.br"/>
 								<input type="email" name="email" class="form-control" required="true" id="staticEmail" placeholder="exemplo@exemplo.com">
 							</div>
 						</div>
@@ -163,7 +164,7 @@
 						<div class="form-group row">
 							<label for="" class="col-sm-2 col-form-label">Telefone:</label>
 							<div class="col-sm-10">
-								<input type="tel" class="form-control" id="phone" name="phone" required="true" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="(xx) xxxx-xxxx">
+								<input type="tel" class="form-control" id="phone" name="phone" required="true" placeholder="(xx) xxxx-xxxx">
 							</div>
 						</div>
 						<div class="form-group row">
